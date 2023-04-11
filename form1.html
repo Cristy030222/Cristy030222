@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form1</title>
+    <!-- <script src="rhombus.js"></script> -->
+    
 </head>
 <body>
+    <script>
+        function draw(x,c){
+            for(let i=0;i<x;i++){
+                document.write(c);
+            }
+        }
+        let n=4;
+        for(let i=1;i<=n;i++){
+        draw(n-i,"-");
+        draw(2*i-1,"*");
+        document.write("<br>");
+        }
+
+        for(let i=n-1;i>=1;i--){
+        draw(n-i,"-");
+        draw(2*i-1,"*");
+        document.write("<br>");
+        }
+        document.write("<br>");
+    </script>
+    
+    <!-- <script>prompt('请输入菱形的边长n:');
+
+        for(let i = 1;i<=2n-1;i++){
+            if(i<n){
+                let a = n-i;
+                for(let j = 1;j<=a;j++)
+                document.write("-");
+                
+                let b = 2*i-1;
+                for(let j = 1;j<=b;j++)
+                document.write("*");
+                document.write("<br>");
+            }
+            
+            else if(i==n){
+                for(let j = 1;j<=b;j++)
+                document.write("*");
+            }
+        
+            else if(i>n){
+                let c = i-n;
+                for(let j = 1;j<=c;j++)
+                document.write("-");
+                    
+                let d = n-(i-n);
+                for(let j = 1;j<=d;j++)
+                document.write("*");
+                document.write("<br>");
+            }
+            }
+            </script> -->
+    
     <form>
         昵称：<input type="text"/></td><br>
         密码：<input type="password"/></td><br>
@@ -31,6 +86,6 @@
         <hr>
         <button  style="display:block;margin:0 auto">立即注册</button> 
         
-    </form>
+    </form> 
 </body>
 </html>
