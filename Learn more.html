@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Learn more</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #d8d3d3;
+            min-height: 100vh;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        header,
+        section,
+        footer {
+            width: 1250px;
+            margin: 0 auto;
+        }
+
+        header {
+            height: 80px;
+        }
+
+        h1 {
+            position: relative;
+            background-color: #BFD8D7;
+            padding: 30px;
+            box-shadow: 10px 10px 5px #747171;
+            border-radius: 5px;
+            text-align: center;
+            color: #BFD8D7;
+            -webkit-text-stroke: 0.1vw #f9f9f9;
+            text-transform: uppercase;
+        }
+
+        h1::before{
+            content: attr(data-text);
+            position: absolute;
+            width: 50px;
+            height: 40%;
+            color: #ff7979;
+            -webkit-text-stroke: 0vw #f9f9f9;
+            overflow:hidden;
+            white-space: nowrap;
+            border-right: 4px solid #ff7979;
+            animation: animate 8s linear infinite;
+        }
+
+        @keyframes animate{
+            0%{
+                width: 0;
+            }
+            70%,90%{
+                width: 100%;
+            }
+        }
+
+        h2 {
+            padding: 30px;
+            border-radius: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        h4 {
+            padding: 10px;
+            border-radius: 5px;
+            vertical-align: middle;
+            color: rgb(127, 137, 137);
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        section {
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        section>div {
+            float: left;
+            background-color: none;
+        }
+
+        .left {
+            width: 680px;
+            margin-right: 20px;
+            margin-left: 65px;
+        }
+
+        .left>div {
+            height: 200px;
+            background-color: #F8EEE7;
+        }
+
+        .left>div:nth-child(-n+2) {
+            margin-bottom: 20px;
+        }
+
+        .right {
+            width: 400px;
+        }
+
+        .right1 {
+            height: 200px;
+            background: url("img11.jpg");
+            background-size: 200px 200px;
+        }
+
+        .right2 {
+            height: 200px;
+            background: url("img12.jpg");
+            background-size: 200px 200px;
+        }
+
+        .right3 {
+            height: 200px;
+            background: url("img13.jpg");
+            background-size: 400px 200px;
+        }
+
+        .right>div:nth-child(-n+2) {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #FEDCD2;
+            color: #ff7979;
+            padding: 25px;
+            height: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 data-text="Enjoy Myself in My Leisure Time">Enjoy Myself in My Leisure Time</h1><br>
+    </header><br><br>
+
+    <section>
+        <div class="left">
+            <div class="left1">
+                <h2>弹琴</h2>
+                <h4>琴声如诉，所有最静好的时光，最灿烂的风霜，或最初的摸样，都缓缓流淌起来</h3>
+            </div>
+            <div class="left2">
+                <h2>跳舞</h2>
+                <h4>指尖划出令人痴迷的弧度，旋转在寂寞的边缘。头发与裙角在午后微弱却温暖的斜阳中飘散</h3>
+            </div>
+            <div class="left3">
+                <h2>摄影</h2>
+                <h4>在几分之一秒的时间里，在认识事件意义的同时，又给予事件本身以适当的完美结构形式</h3>
+            </div>
+        </div>
+        <div class="right">
+            <div class="right1"></div>
+            <div class="right2"></div>
+            <div class="right3"></div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 统计与信息学院 2021级信管 21057012 方晗玥</p>
+    </footer>
+</body>
+
+</html>
+
+
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+    <title>Learn more</title>
+    <style>
+        /* CSS styles go here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            background: url("img10.jpg");
+            background-repeat: no-repeat;
+            background-size: 1500px 1500px;
+            max-width: 1000px;
+        }
+
+        h1 {
+            background-color: #e0cddc;
+            padding: 30px;
+            box-shadow: 10px 10px 5px #747171;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            color: #646060;
+            text-align: center;
+        }
+
+        h2 {
+            text-decoration: blink;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 250px;
+            height: 50%;
+        }
+
+        .hobby {
+            margin: 20px;
+            padding: 20px;
+            background-color: #d8d1d1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .hobby h2 {
+            color: #333;
+            margin-top: 0;
+        }
+
+        .hobby p {
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Enjoy Myself in My Leisure Time</h1><br>
+    <div class="hobby">
+        <div style="display: flex; align-items: center;"></div>
+        <h2>弹琴</h2>
+
+        <img src="img11.jpg" style="width: 50%; margin-right: 50px;">
+        <p style="flex: 1;">I love exploring the great outdoors and challenging myself with new trails.</p>
+    </div>
+    <div class="hobby">
+        <h2>跳舞</h2>
+        <img src="img12.jpg">
+        <p>There's nothing quite like the satisfaction of creating a delicious meal from scratch.</p>
+    </div>
+    <div class="hobby">
+        <h2>摄影</h2>
+        <img src="img13.jpg">
+        <p>I enjoy getting lost in a good book and learning new things.</p>
+    </div>
+</body>
+
+</html> -->

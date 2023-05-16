@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form1</title>
     <!-- <script src="rhombus.js"></script> -->
-    
+
 </head>
+<style>
+    body {
+        background-color: #f7f6f6;
+        background: url("fc0cf978e7931f6c6e2dff25b156a11.jpg");
+        background-repeat: no-repeat;
+        background-size: 1500px 1200px;
+    }
+</style>
+
 <body>
     <script>
-        function draw(x,c){
-            for(let i=0;i<x;i++){
+        function draw(x, c) {
+            for (let i = 0; i < x; i++) {
                 document.write(c);
             }
         }
-        let n=4;
-        for(let i=1;i<=n;i++){
-        draw(n-i,"-");
-        draw(2*i-1,"*");
-        document.write("<br>");
+        let n = 4;
+        for (let i = 1; i <= n; i++) {
+            draw(n - i, "-");
+            draw(2 * i - 1, "*");
+            document.write("<br>");
         }
 
-        for(let i=n-1;i>=1;i--){
-        draw(n-i,"-");
-        draw(2*i-1,"*");
-        document.write("<br>");
+        for (let i = n - 1; i >= 1; i--) {
+            draw(n - i, "-");
+            draw(2 * i - 1, "*");
+            document.write("<br>");
         }
         document.write("<br>");
     </script>
-    
+
     <!-- <script>prompt('请输入菱形的边长n:');
 
         for(let i = 1;i<=2n-1;i++){
@@ -61,31 +71,32 @@
             }
             }
             </script> -->
-    
+
     <form>
-        昵称：<input type="text"/></td><br>
-        密码：<input type="password"/></td><br>
-        邮箱：<input type="text"/></td>
+        昵称：<input type="text" /></td><br>
+        密码：<input type="password" /></td><br>
+        邮箱：<input type="text" /></td>
         <select>
             <option>qq.com</option>
             <option>163.com</option>
             <option>sohu.com</option>
             <option>gmail.com</option>
-            <option>hotmail.com</option>        
+            <option>hotmail.com</option>
         </select><br>
-        性别：<input type="radio"name="gender"/>男 
-        <input type="radio"name="gender"/>女<br>
-        爱好：<input type="checkbox"name="hobby"/>旅游
-        <input type="checkbox"name="hobby"/>摄影
-        <input type="checkbox"name="hobby"/>运动<br>
+        性别：<input type="radio" name="gender" />男
+        <input type="radio" name="gender" />女<br>
+        爱好：<input type="checkbox" name="hobby" />旅游
+        <input type="checkbox" name="hobby" />摄影
+        <input type="checkbox" name="hobby" />运动<br>
         个人简介：<br>
         <textarea cols="45" rows="10"></textarea>
         <br>
         上传个人照片：<br>
-        <input type="file"/>
+        <input type="file" />
         <hr>
-        <button  style="display:block;margin:0 auto">立即注册</button> 
-        
-    </form> 
+        <button style="display:block;margin:0 auto">立即注册</button>
+
+    </form>
 </body>
+
 </html>
